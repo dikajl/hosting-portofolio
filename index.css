@@ -1,0 +1,220 @@
+:root {
+    --bg--primary: #fafafa;
+    --bg--secondary: #0a0a0a;
+    --dv--primary: #a3a3a3;
+    --dv--secondary: #262626;
+    --cl--primary: #0b4550;
+    --cl--secondary: #e6ff2b;
+    --nav--primary: #848c8e;
+  }
+  *,
+  html,
+  body {
+    margin: 0;
+    padding: 0;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    /* overflow-x: hidden; */
+    font-family: georgia;
+    outline: none;
+    border: none;
+    text-decoration: none;
+  }
+   
+  body {
+    overflow-x: hidden;
+    background-color: var(--bg--primary);
+    text-decoration: none;
+  }
+   
+  /* navbar */
+  nav {
+    background-color:#0a0a0a;
+    /* opacity: 0.5; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1.2rem 7%;
+    border-bottom: 1px solid var(--dv--primary);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: 9999;
+    text-decoration: none;
+    color:#ffffff
+  }
+  nav .logo {
+    font-size: 3rem;
+    font-weight: 700;
+    color:#ffffff;
+  }
+  nav .logo a {
+    text-decoration: none;
+    color: var(--cl--secondary);
+  }
+  nav .menu a {
+    color: var(--bg--primary);
+    display: inline-block;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1rem;
+    margin: 0 1rem;
+  }
+  nav .menu a:hover {
+    color: var(--cl--secondary);
+  }
+  .menu {
+    float: right;
+  }
+  /* end style navbar */
+   
+  /* tampilan beranda */
+  .beranda {
+    /* background-image: url(image/background.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:#ffffff;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.4rem 7%;
+    color:#0a0a0a;
+  }
+  .beranda h1 {
+    font-size: 200px;
+  }
+   
+ /* tampilan about */
+.about {
+    background-color: var(--bg--primary);
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.4rem 7%;
+  }
+  .about h1 {
+    font-size: 60px;
+  }
+  .about h2 {
+    font-size: 30px;
+    color: var(--cl--primary);
+  }
+  .about .countainer {
+    /* background-color: var(--nav--primary); */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .about .countainer .card {
+    width: 700px;
+  }
+  .about .countainer .card h3 {
+    font-size: 30px;
+  }
+  .about .countainer .card p {
+    margin: 2rem;
+    font-size: 1rem;
+  }
+  .about .countainer .card-foto img {
+    width: 300px;
+    height: 250px;
+  }
+  /* end about */
+   
+  /* fasilitas */
+  .skil {
+    background-color: var(--bg--primary);
+    min-height: 100vh;
+    align-items: center;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.4rem 7%;
+  }
+  .skil h2 {
+    font-size: 50px;
+  }
+  .skil .countainer {
+    background-color: var(--nav--primary);
+    padding: 5rem;
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .skil .countainer .card {
+    border-radius: 10px;
+    background-color: var(--cl--primary);
+    padding: 1rem;
+    width: 250px;
+    height: 250px;
+    margin: 10px 10px 10px 10px;
+  }
+  .skil .countainer .card img {
+    width: 225px;
+    height: 175px;
+    margin-top: 10px;
+    margin-left: 0;
+  }
+  .skil .countainer .card h3 {
+    color: var(--cl--secondary);
+
+  }
+  /* end skil */
+   
+  /* jurusan */
+  .projek {
+    background-color: var(--bg--secondary);
+    min-height: 100vh;
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.4rem 7%;
+  }
+  .projek h2 {
+    font-size: 50px;
+    color: var(--cl--secondary);
+  }
+  .projek .countainer {
+    text-align: center;
+    margin: 0;
+    background-color: var(--cl--primary);
+    border-radius: 20px;
+    padding: 5rem;
+  }
+  .projek .countainer .card h2 {
+    font-size: 25px;
+    color: var(--bg--secondary);
+  }
+  .projek .countainer img {
+    width: 125px;
+    height: 150px;
+  }
+  .projek .countainer h3 {
+    color: var(--cl--secondary);
+  }
+  .projek .countainer h4 {
+    color: var(--bg--primary);
+  }
+  .projek .countainer p {
+    color: var(--bg--primary);
+  }
+  /* end  */
+   
+  /* footer */
+  .footer {
+    background-color: var(--cl--primary);
+   
+    width: 100%;
+    margin: 0 auto;
+    padding: 1.4rem 7%;
+   
+    color: var(--cl--secondary);
+  }
+  .footer .countainer {
+    text-align: center;
+  }
+  .footer .countainer .lisensi {
+    text-align: center;
+  }
